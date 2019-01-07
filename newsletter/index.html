@@ -1,111 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Design Release Newsletter</title>
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=EB+Garamond:400,500,800,800i|Open+Sans:400,700);
-       
-        * {
-            box-sizing: border-box;
-        }
-        html, body {
-            font-family: 'Open Sans';
-            color: #333;
-        }
-        body {
-            background: #F8F7F4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Design Release Newsletter</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=EB+Garamond:400,500,800,800i|Open+Sans:400,700);
 
-        h1, h2, h3, h4, h5 {
-            font-family: 'EB Garamond';
-            font-weight: normal;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        h1 {
-            margin-top: 0;
-            font-size: 3.8rem;
-        }
+    html,
+    body {
+      font-family: 'Open Sans';
+      color: #333;
+    }
 
-        .content {
-            padding: 4rem;
-            padding-top: 2rem;
-            max-width: 700px;
-            min-width: 420px;
-            margin: 0 auto;
-        }
+    body {
+      background: #F8F7F4;
+    }
 
-        .logo__img {
-            text-align: center;
-            padding-bottom: 2rem;
-        }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'EB Garamond';
+      font-weight: normal;
+    }
 
-        .logo__img img {
-            width: 280px;
-        }
+    h1 {
+      margin-top: 0;
+      font-size: 3.8rem;
+    }
 
-        .subtitle__text {
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding-bottom: 3rem;
-        }
+    h2 {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
 
-        @media only screen and (max-width: 600px) {
-            body {
-                font-size: 13px;
-            }
+    .content {
+      padding: 4rem;
+      padding-top: 2rem;
+      max-width: 700px;
+      min-width: 420px;
+      margin: 0 auto;
+    }
 
-            .content {
-                padding: 2rem;
-                padding-top: 1rem;
-            }
+    .logo__img {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
 
-            .logo__img {
-                padding-bottom: 0.5rem;
-            }
+    .logo__img img {
+      width: 280px;
+    }
 
-            .logo__img img {
-                width: 180px;
-            }
+    .subtitle__text {
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-bottom: 3rem;
+    }
 
-            .subtitle__text {
-                padding-bottom: 1rem;
-            }
+    .events-list {}
 
-            h1 {
-                font-size: 2.77rem;
-            }
-        }
-    </style>
+    .events-list__item {
+      display: grid;
+      grid-template-columns: 2fr 5fr 1.5fr;
+      padding: 0.5rem 0rem;
+
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+
+      line-height: 2.25;
+    }
+
+    .events-list__item>div {
+      display: flex;
+      align-items: center;
+    }
+
+    .events-list__item img {
+      width: 100%;
+    }
+
+    .view-more {
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+
+    .view-more__text {
+      font-size:  2rem;
+      text-decoration: none;
+      font-family: "EB Garamond";
+      color: #333;
+      border-bottom: 1px solid #333;
+    }
+
+
+    .footer {
+      padding-top: 2rem;
+    }
+    .footer p {
+      margin: 0px;
+      margin-bottom: 0.5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        font-size: 13px;
+      }
+
+      .content {
+        padding: 2rem;
+        padding-top: 1rem;
+      }
+
+      .logo__img {
+        padding-bottom: 0.5rem;
+      }
+
+      .logo__img img {
+        width: 180px;
+      }
+
+      .subtitle__text {
+        padding-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2.77rem;
+      }
+
+      h2 {
+        padding-top: 1rem;
+      }
+
+      .events-list__item {
+        padding: 1rem 0;
+      }
+
+      .view-more {
+        padding: 2.5rem;
+      }
+
+      .view-more__text {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <table class="content">
-        <tr="logo">
-            <td class="logo__img">
-                <img src="http://www.thedesignrelease.com/static/logo.png" alt="The Design Release">
-            </td>
-        </tr>
-        <tr class="subtitle">
-            <td class="subtitle__text">
-                <p>
-                    Introducing our complete of<br />
-                    Design Events Worldwide
-                </p>
-            </td>
-        </tr>
-        <tr class="heading">
-            <td>
-                <h1>The Comprehensive</h1>
-                <p>
-                    The Comprehensive is the only guide you will need to navigate the most 
-                    important design shows of the year, worldwide. We feature over 100 shows
-                    in 25 cities. Below is a look at what's to come for 2019. 
-                </p>
-            </td>
-        </tr>
-    </table>
+  <table class="content">
+    <tr="logo">
+      <td class="logo__img">
+        <img src="http://www.thedesignrelease.com/static/logo.png" alt="The Design Release">
+      </td>
+      </tr>
+
+
+      <tr class="subtitle">
+        <td class="subtitle__text">
+          <p>
+            Introducing our complete of<br />
+            Design Events Worldwide
+          </p>
+        </td>
+      </tr>
+
+
+      <tr class="heading">
+        <td>
+          <h1>The Comprehensive</h1>
+          <p>
+            The Comprehensive is the only guide you will need to navigate the most
+            important design shows of the year, worldwide. We feature over 100 shows
+            in 25 cities. Below is a look at what's to come for 2019.
+          </p>
+        </td>
+      </tr>
+
+
+      <!-- First Month -->
+      <tr class="january">
+        <td>
+          <h2>January</h2>
+          <table class="events-list">
+            <tr>
+              <!-- Each Event Here -->
+              <td class="events-list__item">
+                <div>3rd -<br>7th</div>
+                <div>
+                  <div>
+                    Toronto Design Festival<br>
+                    <em>Toronto, Canada</em>
+                  </div>
+                </div>
+                <div>
+                  <img src="https://cdn.shopify.com/s/files/1/0213/5102/products/janus4_medium.jpg?v=1529956662">
+                </div>
+              </td>
+              <!-- End Events -->
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- Second Month -->
+      <tr class="february">
+        <td>
+          <h2>February</h2>
+          <table class="events-list">
+            <tr>
+              <!-- Each Event Here -->
+              <td class="events-list__item">
+                <div>3rd -<br>7th</div>
+                <div>
+                  <div>
+                    Toronto Design Festival<br>
+                    <em>Toronto, Canada</em>
+                  </div>
+                </div>
+                <div>
+                  <img src="https://cdn.shopify.com/s/files/1/0213/5102/products/janus4_medium.jpg?v=1529956662">
+                </div>
+              </td>
+              <!-- End Events -->
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="view-more">
+          <a href="#" class="view-more__text">View More</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="footer">
+          <p>
+            View this email in your browser.
+          </p>
+          <p>
+            This email was sent to: test@gmail.com
+          </p>
+          <p>
+            Update your preferences, or unsubscribe.
+          </p>
+          <p>
+            Visit us at www.thedesignrelease.com
+          </p>
+        </td>
+      </tr>
+  </table>
 </body>
+
 </html>
