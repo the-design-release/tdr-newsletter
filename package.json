@@ -1,0 +1,13 @@
+{
+  "name": "tdr-newsletter",
+  "version": "0.1.0",
+  "description": "The Design Release Newsletter",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server ./newsletter"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
