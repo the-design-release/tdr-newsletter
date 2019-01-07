@@ -66,12 +66,13 @@
       padding-bottom: 3rem;
     }
 
-    .events-list {}
+    .events-list {
+      width: 100%;
+    }
 
     .events-list__item {
-      display: grid;
-      grid-template-columns: 2fr 5fr 1.5fr;
       padding: 0.5rem 0rem;
+      width: 100%;
 
       border-top: 1px solid #333;
       border-bottom: 1px solid #333;
@@ -79,13 +80,14 @@
       line-height: 2.25;
     }
 
-    .events-list__item>div {
-      display: flex;
-      align-items: center;
+    .events-list__image {
+        width: 100px;
+        vertical-align: bottom;
     }
 
     .events-list__item img {
       width: 100%;
+      display: block;
     }
 
     .view-more {
@@ -101,6 +103,9 @@
       border-bottom: 1px solid #333;
     }
 
+    .events-list__date {
+      width: 100px;
+    }
 
     .footer {
       padding-top: 2rem;
@@ -142,6 +147,10 @@
 
       .events-list__item {
         padding: 1rem 0;
+      }
+
+      .events-list__date {
+        width: 50px;
       }
 
       .view-more {
@@ -193,42 +202,21 @@
           <table class="events-list">
             <tr>
               <!-- Each Event Here -->
-              <td class="events-list__item">
-                <div>3rd -<br>7th</div>
-                <div>
-                  <div>
-                    Toronto Design Festival<br>
-                    <em>Toronto, Canada</em>
-                  </div>
-                </div>
-                <div>
-                  <img src="https://cdn.shopify.com/s/files/1/0213/5102/products/janus4_medium.jpg?v=1529956662">
-                </div>
-              </td>
-              <!-- End Events -->
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- Second Month -->
-      <tr class="february">
-        <td>
-          <h2>February</h2>
-          <table class="events-list">
-            <tr>
-              <!-- Each Event Here -->
-              <td class="events-list__item">
-                <div>3rd -<br>7th</div>
-                <div>
-                  <div>
-                    Toronto Design Festival<br>
-                    <em>Toronto, Canada</em>
-                  </div>
-                </div>
-                <div>
-                  <img src="https://cdn.shopify.com/s/files/1/0213/5102/products/janus4_medium.jpg?v=1529956662">
-                </div>
+              <td>
+                <table class="events-list__item">
+                  <tr>
+                    <td class="events-list__date">
+                      3rd -<br>7th
+                    </td>
+                    <td>
+                      Toronto Design Festival<br>
+                      <em>Toronto, Canada</em>
+                    </td>
+                    <td class="events-list__image">
+                      <img src="https://cdn.shopify.com/s/files/1/0213/5102/products/janus4_medium.jpg?v=1529956662">
+                    </td>
+                  </tr>
+                </table>
               </td>
               <!-- End Events -->
             </tr>
